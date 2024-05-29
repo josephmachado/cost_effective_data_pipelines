@@ -10,6 +10,8 @@ Code for blog at: WIP
 2. [sqlite3](https://www.sqlite.org/index.html)
 3. Sufficient disk memory (depending on if you want to run with 1 or 10 or 100GB)
 
+**Note**: all of this can run on GitHub codespaces: ![Codespace](./assets/cs.png)
+
 Lets create a virtual env and install the libraries needed:
 
 ```bash
