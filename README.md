@@ -69,6 +69,9 @@ Run ETL with python as shown below
 time python ./src/data_processor/exchange_data.py 2024-05-29
 time python ./src/data_processor/dim_parts_supplier.py 2024-05-29
 time python ./src/data_processor/one_big_table.py 2024-05-29
+time python ./src/data_processor/wide_month_supplier_metrics.py 2024-05-29
+#  1201.08s user 1020.04s system 398% cpu 9:17.08 total
+# 9 minutes and 17s on a 10GB dataset
 ```
 
 The output of the `one_big_table.py` script for a data of 10GB is
