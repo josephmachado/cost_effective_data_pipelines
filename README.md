@@ -69,7 +69,7 @@ Run ETL with python as shown below
 time python ./src/data_processor/exchange_data.py 2024-05-29
 time python ./src/data_processor/dim_parts_supplier.py 2024-05-29
 time python ./src/data_processor/one_big_table.py 2024-05-29 # 2m 43s
-time python ./src/data_processor/wide_month_supplier_metrics.py 2024-05-29 # 9m 17s
+time python ./src/data_processor/wide_month_supplier_metrics.py 2024-05-29 # 7m 20s
 ```
 
 The script [wide_month_supplier_metrics.py](./src/data_processor/wide_month_supplier_metrics.py) ran in 7m and 20s, this included reading in about 10GB of data, inefficiently processing it and writing it out.
