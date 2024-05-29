@@ -68,32 +68,14 @@ Run ETL with python as shown below
 ```bash
 time python ./src/data_processor/exchange_data.py 2024-05-29
 time python ./src/data_processor/dim_parts_supplier.py 2024-05-29
-time python ./src/data_processor/one_big_table.py 2024-05-29
-time python ./src/data_processor/wide_month_supplier_metrics.py 2024-05-29
-#  1201.08s user 1020.04s system 398% cpu 9:17.08 total
-# 9 minutes and 17s on a 10GB dataset
+time python ./src/data_processor/one_big_table.py 2024-05-29 # 2m 43s
+time python ./src/data_processor/wide_month_supplier_metrics.py 2024-05-29 # 9m 17s
 ```
 
-The output of the `one_big_table.py` script for a data of 10GB is
+The script [wide_month_supplier_metrics.py](./src/data_processor/wide_month_supplier_metrics.py) ran in 7m and 20s, this included reading in about 10GB of data, inefficiently processing it and writing it out.
 
-```bash
-972.75s user 83.38s system 647% cpu 2:43.15 total
-# The script was run on a 32GB RAM 8 core Thinkpad
-```
+The script was run on a 8 core, 32 GB RAM, 1TB HDD 2017 Thinkpad.
 
-**Explanation**:
+Resource utilization:
 
-1. **`user: 972.75s`**: is the amount of CPU time spent in user-mode (non-kernel) code. 
-    In this case, the script spent 972.75 seconds executing user-mode instructions.
-2. **`system: 83.38s`**: is the amount of CPU time spent in kernel-mode (system) code.
-    The script spent 83.38 seconds executing system-level operations.
-3. **`cpu: 647%`**: This percentage indicates the CPU utilization during the script execution.
-    A value over 100% means that the process used multiple CPU cores.
-    In this case, 647% suggests that, on average, more than six cores were utilized concurrently.
-4. **`total: 2:43.15`**: This is the total elapsed (wall-clock) time taken to run the script.
-    The format is minutes:seconds, so 2:43.15 translates to 2 minutes and 43.15 seconds.
-
-**Summary**:
-The script took 2 minutes and 43.15 seconds to run from start to finish.
-During this time, it utilized a significant amount of CPU resources, with 972.75 seconds of user time and 83.38 seconds of system time, indicating efficient use of multiple CPU cores.
-
+![htop](./assets/htop.png)

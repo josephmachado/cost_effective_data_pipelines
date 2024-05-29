@@ -120,7 +120,7 @@ def transform(con, partition_key):
             ORDER BY
                 month,
                 part_name
-    ) TO './processed_data/wide_month_supplier_metrics/{partition_key}.csv' (FORMAT csv, HEADER, DELIMITER ',')
+    ) TO './processed_data/wide_month_supplier_metrics/{partition_key}' (FORMAT csv, HEADER, DELIMITER ',', per_thread_output)
     """
     # We can use duckdb's in built partition function as well
 
