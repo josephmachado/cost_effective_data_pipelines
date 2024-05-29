@@ -1,12 +1,14 @@
-import duckdb
 import argparse
-from datetime import datetime
+
+import duckdb
+
 
 def extract_load(con):
     con.execute("INSTALL sqlite; LOAD sqlite;")
 
-    # NOTE: this serves as both extract and load 
+    # NOTE: this serves as both extract and load
     con.execute("CALL sqlite_attach('./tpch.db')")
+
 
 def transform(con, partition_key):
     # NOTE: Join tables and write to file system directly using DuckDB
@@ -89,10 +91,11 @@ def run_pipeline(partition_key):
     # Clean up
     con.close()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     # Argument parser for timestamp input
     parser = argparse.ArgumentParser(description="Create dim_parts_supplier table")
-    parser.add_argument('timestamp', type=str, help='Timestamp for the folder name')
+    parser.add_argument("timestamp", type=str, help="Timestamp for the folder name")
     args = parser.parse_args()
     folder_name = args.timestamp
     run_pipeline(folder_name)
