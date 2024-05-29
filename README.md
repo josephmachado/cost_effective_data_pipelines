@@ -6,8 +6,8 @@ Code for blog at: WIP
 
 ### Prerequisites:
 
-1. Python 3.8 or above
-2. sqlite3
+1. [Python 3.8 or above](https://www.python.org/downloads/)
+2. [sqlite3](https://www.sqlite.org/index.html)
 3. Sufficient disk memory (depending on if you want to run with 1 or 10 or 100GB)
 
 Lets create a virtual env and install the libraries needed:
@@ -19,6 +19,7 @@ python3 -m venv myenv
 # Linux
 source myenv/bin/activate
 pip install -r requirements.txt
+# After you are done, deactivate with the command `deactivate`
 ```
 
 ### Generate data:
@@ -76,14 +77,14 @@ The output of the `one_big_table.py` script for a data of 10GB is
 
 **Explanation**:
 
-1. user: 972.75s: is the amount of CPU time spent in user-mode (non-kernel) code. 
+1. **`user: 972.75s`**: is the amount of CPU time spent in user-mode (non-kernel) code. 
     In this case, the script spent 972.75 seconds executing user-mode instructions.
-2. system: 83.38s: is the amount of CPU time spent in kernel-mode (system) code.
+2. **`system: 83.38s`**: is the amount of CPU time spent in kernel-mode (system) code.
     The script spent 83.38 seconds executing system-level operations.
-3. cpu: 647%: This percentage indicates the CPU utilization during the script execution.
+3. **`cpu: 647%`**: This percentage indicates the CPU utilization during the script execution.
     A value over 100% means that the process used multiple CPU cores.
     In this case, 647% suggests that, on average, more than six cores were utilized concurrently.
-4. total: 2:43.15: This is the total elapsed (wall-clock) time taken to run the script.
+4. **`total: 2:43.15`**: This is the total elapsed (wall-clock) time taken to run the script.
     The format is minutes:seconds, so 2:43.15 translates to 2 minutes and 43.15 seconds.
 
 **Summary**:
