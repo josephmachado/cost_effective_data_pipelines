@@ -75,6 +75,7 @@ The output of the `one_big_table.py` script for a data of 10GB is
 
 ```bash
 972.75s user 83.38s system 647% cpu 2:43.15 total
+# The script was run on a 32GB RAM 8 core Thinkpad
 ```
 
 **Explanation**:
