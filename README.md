@@ -1,6 +1,6 @@
-# Cost Effective Data Pipelines
+# Cost Efficient Data Pipelines
 
-Code for blog at: [Building cost effective data pipelines with Python & DuckDB](https://www.startdataengineering.com/post/cost-effective-pipelines/) 
+Code for blog at: [Building cost efficient data pipelines with Python & DuckDB](https://www.startdataengineering.com/post/cost-effective-pipelines/) 
 
 ## Setup:
 
