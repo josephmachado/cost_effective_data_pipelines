@@ -72,6 +72,8 @@ time python ./src/data_processor/one_big_table.py 2024-05-29 # 2m 43s
 time python ./src/data_processor/wide_month_supplier_metrics.py 2024-05-29 # 7m 20s # This will fail on base CodeSpace VM
 ```
 
+**NOTE:** The code in this repo can be optimized following principles stated in [this performance guide](https://duckdb.org/docs/guides/performance/overview.html).
+
 The script [wide_month_supplier_metrics.py](./src/data_processor/wide_month_supplier_metrics.py) ran in 7m and 20s, this included reading in about 10GB of data, inefficiently processing it and writing it out.
 
 Resource utilization:
