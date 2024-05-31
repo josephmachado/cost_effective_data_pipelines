@@ -1,6 +1,6 @@
-# Cost Efficient Data Pipelines
+# Cost Effective Data Pipelines
 
-Code for blog at: [Building cost efficient data pipelines with Python & DuckDB](https://www.startdataengineering.com/post/cost-effective-pipelines/) 
+Code for blog at: [Building cost effective data pipelines with Python & DuckDB](https://www.startdataengineering.com/post/cost-effective-pipelines/) 
 
 ## Setup:
 
@@ -74,7 +74,7 @@ time python ./src/data_processor/wide_month_supplier_metrics.py 2024-05-29 # 7m 
 
 **NOTE:** The code in this repo can be optimized following principles stated in [this performance guide](https://duckdb.org/docs/guides/performance/overview.html).
 
-The script [wide_month_supplier_metrics.py](./src/data_processor/wide_month_supplier_metrics.py) ran in 7m and 20s, this included reading in about 10GB of data, inefficiently processing it and writing it out.
+The script [wide_month_supplier_metrics.py](./src/data_processor/wide_month_supplier_metrics.py) ran in 7m and 20s, this included reading in about 10GB of data, ineffectively processing it and writing it out.
 
 Resource utilization:
 
