@@ -25,7 +25,7 @@ When codespaces open, wait for it to complete installing the required libraries 
 
 ![Create codespace](./assets/cs2.png)
 
-You can open a Python REPL and run the scripts in the [generate date section](#generate-data).
+You can open a Python REPL and run the scripts in the [generate data section](#generate-data).
 
 ### Run code on your machine
 
