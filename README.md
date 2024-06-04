@@ -95,8 +95,8 @@ You can run the ETL scripts as shown below.
 ```bash
 time python ./src/data_processor/exchange_data.py 2024-05-29
 time python ./src/data_processor/dim_parts_supplier.py 2024-05-29
-time python ./src/data_processor/one_big_table.py 2024-05-29 # 2m 43s
-time python ./src/data_processor/wide_month_supplier_metrics.py 2024-05-29 # 7m 20s
+time python ./src/data_processor/one_big_table.py 2024-05-29
+time python ./src/data_processor/wide_month_supplier_metrics.py 2024-05-29
 # This last script will fail on base CodeSpace VM, see here for powerful Codespace VMS:`
 # https://docs.github.com/en/codespaces/customizing-your-codespace/changing-the-machine-type-for-your-codespace?tool=webui
 ```
