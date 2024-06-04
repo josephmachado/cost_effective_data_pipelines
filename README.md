@@ -2,7 +2,7 @@
     * [Setup:](#setup)
         * [Run on CodeSpaces:](#run-on-codespaces)
         * [Run code on your machine:](#run-code-on-your-machine)
-        * [Generate data:](#generate-data)
+    * [Generate data:](#generate-data)
     * [Data processing](#data-processing)
 
 
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 # After you are done, deactivate with the command `deactivate`
 ```
 
-### Generate data:
+## Generate data:
 
 For the example in this repo we use the TPC-H data set and Coincap API.
 Let's generate the TPCH data, by running the following commands in your terminal:
