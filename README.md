@@ -1,3 +1,10 @@
+* [Cost Effective Data Pipelines](#cost-effective-data-pipelines)
+    * [Setup](#setup)
+        * [Run on CodeSpaces](#run-on-codespaces)
+        * [Run code on your machine](#run-code-on-your-machine)
+    * [Generate data](#generate-data)
+    * [Data processing](#data-processing)
+
 # Cost Effective Data Pipelines
 
 Code for blog at: [Building cost effective data pipelines with Python & DuckDB](https://www.startdataengineering.com/post/cost-effective-pipelines/) 
