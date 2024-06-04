@@ -29,7 +29,7 @@ You can open a Python REPL and run the scripts in the [generate data section](#g
 
 ### Run code on your machine
 
-You'll need the following:
+Alternatively you can run this code on your machine. You'll need the following:
 
 1. [Python 3.8 or above](https://www.python.org/downloads/)
 2. [sqlite3](https://www.sqlite.org/index.html)
