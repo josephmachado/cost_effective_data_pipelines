@@ -1,3 +1,11 @@
+* [Cost Effective Data Pipelines](#cost-effective-data-pipelines)
+    * [Setup:](#setup)
+        * [Run on CodeSpaces:](#run-on-codespaces)
+        * [Run code on your machine:](#run-code-on-your-machine)
+        * [Generate data:](#generate-data)
+    * [Data processing](#data-processing)
+
+
 # Cost Effective Data Pipelines
 
 Code for blog at: [Building cost effective data pipelines with Python & DuckDB](https://www.startdataengineering.com/post/cost-effective-pipelines/) 
@@ -90,7 +98,8 @@ time python ./src/data_processor/exchange_data.py 2024-05-29
 time python ./src/data_processor/dim_parts_supplier.py 2024-05-29
 time python ./src/data_processor/one_big_table.py 2024-05-29 # 2m 43s
 time python ./src/data_processor/wide_month_supplier_metrics.py 2024-05-29 # 7m 20s
-# This last script will fail on base CodeSpace VM, see here for powerful Codespace VMS: https://docs.github.com/en/codespaces/customizing-your-codespace/changing-the-machine-type-for-your-codespace?tool=webui
+# This last script will fail on base CodeSpace VM, see here for powerful Codespace VMS:`
+# https://docs.github.com/en/codespaces/customizing-your-codespace/changing-the-machine-type-for-your-codespace?tool=webui
 ```
 
 Running the ETL on a 8 core, 32 GB RAM, 1TB HDD 2017 Thinkpad with performs as shown below. The script [wide_month_supplier_metrics.py](./src/data_processor/wide_month_supplier_metrics.py) ran in 7m and 20s, this included reading in about 10GB of data, ineffectively processing it and writing it out.
