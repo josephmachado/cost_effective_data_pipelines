@@ -1,18 +1,10 @@
-* [Cost Effective Data Pipelines](#cost-effective-data-pipelines)
-    * [Setup:](#setup)
-        * [Run on CodeSpaces:](#run-on-codespaces)
-        * [Run code on your machine:](#run-code-on-your-machine)
-    * [Generate data:](#generate-data)
-    * [Data processing](#data-processing)
-
-
 # Cost Effective Data Pipelines
 
 Code for blog at: [Building cost effective data pipelines with Python & DuckDB](https://www.startdataengineering.com/post/cost-effective-pipelines/) 
 
-## Setup:
+## Setup
 
-### Run on CodeSpaces:
+### Run on CodeSpaces
 
 You can run the code in the repo with Codespaces. 
 
@@ -28,7 +20,7 @@ When codespaces open, wait for it to complete installing the required libraries 
 
 You can open a Python REPL and run the scripts in the generate date section.
 
-### Run code on your machine:
+### Run code on your machine
 
 You'll need the following:
 
@@ -52,7 +44,7 @@ pip install -r requirements.txt
 # After you are done, deactivate with the command `deactivate`
 ```
 
-## Generate data:
+## Generate data
 
 For the example in this repo we use the TPC-H data set and Coincap API.
 Let's generate the TPCH data, by running the following commands in your terminal:
