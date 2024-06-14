@@ -90,7 +90,12 @@ Your output will be (if you generated a 1GB dataset)
 
 ## Data processing
 
-You can run the ETL scripts as shown below.
+You can run the ETL scripts using the `make up` command. 
+```bash
+make up
+```
+
+Alternatively you can run the scripts individually as shown below.
 
 ```bash
 time python ./src/data_processor/exchange_data.py 2024-05-29
