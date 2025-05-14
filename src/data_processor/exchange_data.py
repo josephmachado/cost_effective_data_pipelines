@@ -5,6 +5,13 @@ import duckdb
 
 
 def extract_transform_load(con: duckdb.DuckDBPyConnection, partition_key: str) -> None:
+    """
+    Extracts exchange data from a CoinCap API, transforms it, and loads it into a CSV file.
+
+    Args:
+        con: A DuckDB connection object.
+        partition_key: A string used to name the output CSV file (e.g., a timestamp).
+    """
     con.execute("INSTALL httpfs;")
     con.execute("LOAD httpfs;")
     # Read data from the API and flatten it using DuckDB
@@ -34,6 +41,12 @@ def extract_transform_load(con: duckdb.DuckDBPyConnection, partition_key: str) -
 
 
 def run_pipeline(partition_key: str) -> None:
+    """
+    Runs the entire ETL pipeline for exchange data.
+
+    Args:
+        partition_key: A string used to partition the output data (e.g., a timestamp).
+    """
     # create connection for ELT
     # Register SQLite tables in DuckDB
     con = duckdb.connect()
