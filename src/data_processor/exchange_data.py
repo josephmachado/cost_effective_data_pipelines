@@ -1,9 +1,10 @@
 import argparse
+from typing import Tuple
 
 import duckdb
 
 
-def extract_transform_load(con, partition_key):
+def extract_transform_load(con: duckdb.DuckDBPyConnection, partition_key: str) -> None:
     con.execute("INSTALL httpfs;")
     con.execute("LOAD httpfs;")
     # Read data from the API and flatten it using DuckDB
@@ -32,7 +33,7 @@ def extract_transform_load(con, partition_key):
     ).fetchall()
 
 
-def run_pipeline(partition_key):
+def run_pipeline(partition_key: str) -> None:
     # create connection for ELT
     # Register SQLite tables in DuckDB
     con = duckdb.connect()
