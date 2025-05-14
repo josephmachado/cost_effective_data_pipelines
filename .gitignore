@@ -5,3 +5,4 @@
 myenv/
 
 tpch.db
+.aider*
