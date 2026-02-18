@@ -54,6 +54,12 @@ pip install -r requirements.txt
 ## Generate data
 
 For the example in this repo we use the TPC-H data set and Coincap API.
+
+> [!IMPORTANT]
+> In order to use CoinCap API you need an API token. The free tier is more than enough
+> to run the example in this repo and you can sign up for it and obtain a token by
+> following the instructions in [CoinCap API documentation](https://pro.coincap.io/api-docs/).
+
 Let's generate the TPCH data, by running the following commands in your terminal:
 
 ```bash
@@ -98,7 +104,7 @@ make up
 Alternatively you can run the scripts individually as shown below.
 
 ```bash
-time python ./src/data_processor/exchange_data.py 2024-05-29
+time python ./src/data_processor/exchange_data.py 2024-05-29 <COINCAP_API_TOKEN>
 time python ./src/data_processor/dim_parts_supplier.py 2024-05-29
 time python ./src/data_processor/one_big_table.py 2024-05-29
 time python ./src/data_processor/wide_month_supplier_metrics.py 2024-05-29
